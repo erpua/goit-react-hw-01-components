@@ -1,4 +1,4 @@
-# goit-react-hw-01-components
+# Getting Started with Create React App
 
 - install NodeJS: https://nodejs.org/en/
 - install react: npx create-react-app . => in case of npm only >> npx
@@ -10,12 +10,13 @@
 - folder src => delete all except index.js (index.js clean)
 - in each component: import React from 'react'
 - npm install --save-dev prop-types => for showing ' type ' kind mistakes ( for
-  development only)
-- !!Possible error : found 1 high severity vulnerability run `npm audit fix` to
-  fix them, or `npm audit` for details
+  development only) => POSSIBLE ERROR: found 1 high severity vulnerability run
+  `npm audit fix` to fix them, or `npm audit` for details
 - npm run build => minified bundle (for production)
 - npm install --save-dev prettier husky lint-staged (
-  https://github.com/goitacademy/react-lint-config )
+  https://github.com/goitacademy/react-lint-config ) IMPORTANT: npm i --save-dev
+  husky@4.3.7 npm i --save-dev lint-staged@9.4.2 => THE HIGHER VERSION MIGHT NOT
+  WORK
 - create file: .huskyrc: { "hooks": { "pre-commit": "lint-staged" } } => husky
   and lint-staged => help connect with git and make additional actions before
   pushing the code

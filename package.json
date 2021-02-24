@@ -36,13 +36,8 @@
     ]
   },
   "devDependencies": {
-    "husky": "^5.1.1",
+    "husky": "^4.3.7",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

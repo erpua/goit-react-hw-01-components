@@ -90,13 +90,13 @@ DEPLOY AND HOMEWORK:
   GitHub Pages) => "homepage": "https://myusername.github.io/my-app"add to
   package.json => change to =>"homepage":
   "https://erpua.github.io/goit-react-hw-01-components",
-- npm run build => creates build folder
 - npm install --save-dev gh-pages
 - in package.json add scripts: "predeploy": "npm run build", "deploy": "gh-pages
   -d build" => "scripts": { "start": "react-scripts start", "build":
   "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
   eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
-- npm run deploy
+- npm run deploy => runs folder build and deploys it into github ( creates
+  gh-pages branch, where all unziped files from build folder )
 
 # Getting Started with Create React App
 

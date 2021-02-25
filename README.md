@@ -36,6 +36,8 @@ INSTALLATIONS:
 
 ---
 
+EXPLANATIONS FOR INSTALLATIONS:
+
 - install NodeJS: https://nodejs.org/en/
 - install react: npx create-react-app . => in case of npm only >> npx
   create-react-app . => create me the react project in this root => in case of
@@ -81,7 +83,22 @@ ADDITIONAL:
 
 ---
 
-/////////////////////////////////
+DEPLOY AND HOMEWORK:
+
+- npm run build => creates build folder
+- https://create-react-app.dev/ => Docs => Deployment ( from the right bar
+  GitHub Pages)
+- in package.json => add "homepage": "https://myusername.github.io/my-app" =>
+  change to =>"homepage": "https://erpua.github.io/goit-react-hw-01-components",
+- npm run build => creates build folder
+- npm install --save-dev gh-pages
+- in package.json in "scripts" add scripts: "predeploy": "npm run build",
+  "deploy": "gh-pages -d build" => "scripts": { "start": "react-scripts start",
+  "build": "react-scripts build", "test": "react-scripts test", "eject":
+  "react-scripts eject", "predeploy": "npm run build", "deploy": "gh-pages -d
+  build" },
+- git status, add ., commit, push
+- npm run deploy
 
 # Getting Started with Create React App
 

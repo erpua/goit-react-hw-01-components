@@ -97,6 +97,7 @@ DEPLOY AND HOMEWORK:
   eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
 - npm run deploy => runs folder build and deploys it into github ( creates
   gh-pages branch, where all unziped files from build folder )
+- add repository root to GitHub Website link
 
 # Getting Started with Create React App
 

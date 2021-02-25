@@ -85,19 +85,17 @@ ADDITIONAL:
 
 DEPLOY AND HOMEWORK:
 
-- npm run build => creates build folder
+- git status, add ., commit, push
 - https://create-react-app.dev/ => Docs => Deployment ( from the right bar
-  GitHub Pages)
-- in package.json => add "homepage": "https://myusername.github.io/my-app" =>
-  change to =>"homepage": "https://erpua.github.io/goit-react-hw-01-components",
+  GitHub Pages) => "homepage": "https://myusername.github.io/my-app"add to
+  package.json => change to =>"homepage":
+  "https://erpua.github.io/goit-react-hw-01-components",
 - npm run build => creates build folder
 - npm install --save-dev gh-pages
-- in package.json in "scripts" add scripts: "predeploy": "npm run build",
-  "deploy": "gh-pages -d build" => "scripts": { "start": "react-scripts start",
-  "build": "react-scripts build", "test": "react-scripts test", "eject":
-  "react-scripts eject", "predeploy": "npm run build", "deploy": "gh-pages -d
-  build" },
-- git status, add ., commit, push
+- in package.json add scripts: "predeploy": "npm run build", "deploy": "gh-pages
+  -d build" => "scripts": { "start": "react-scripts start", "build":
+  "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
+  eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
 - npm run deploy
 
 # Getting Started with Create React App

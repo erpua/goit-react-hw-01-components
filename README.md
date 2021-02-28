@@ -29,7 +29,7 @@ INSTALLATIONS:
   "tabWidth": 2, "useTabs": false, "semi": true, "singleQuote": true,
   "trailingComma": "all", "bracketSpacing": true, "jsxBracketSameLine": false,
   "arrowParens": "avoid", "proseWrap": "always" }
-- npm install modern-normalize (in index.js => import
+- npm install --save-dev modern-normalize (in index.js => import
   'modern-normalize/modern-normalize.css')
 - folder src => delete all except index.js and App.js
 - import React from 'react' in each component file

@@ -20,19 +20,32 @@ INSTALLATIONS:
 - npm install --save-dev prettier
 - npm install --save-dev husky@4.3.7
 - npm install --save-dev lint-staged@9.4.2
-- create file: .huskyrc: : { "hooks": { "pre-commit": "lint-staged" } }
-- create file .lintstagedrc: { "src/**/\*.{json,css,scss,md}": ["prettier
-  --write"], "src/**/\*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"] }
-- create in project .prettierrc.json => { "printWidth": 80, "tabWidth": 2,
-  "useTabs": false, "semi": true, "singleQuote": true, "trailingComma": "all",
-  "bracketSpacing": true, "jsxBracketSameLine": false, "arrowParens": "avoid",
-  "proseWrap": "always" }
+- create file in project root .huskyrc: : { "hooks": { "pre-commit":
+  "lint-staged" } }
+- create file in project root .lintstagedrc: { "src/**/\*.{json,css,scss,md}":
+  ["prettier --write"], "src/**/\*.{js,jsx,ts,tsx}": ["prettier --write",
+  "eslint --fix"] }
+- create file in project root .prettierrc.json => { "printWidth": 80,
+  "tabWidth": 2, "useTabs": false, "semi": true, "singleQuote": true,
+  "trailingComma": "all", "bracketSpacing": true, "jsxBracketSameLine": false,
+  "arrowParens": "avoid", "proseWrap": "always" }
 - npm install modern-normalize (in index.js => import
   'modern-normalize/modern-normalize.css')
 - folder src => delete all except index.js and App.js
 - import React from 'react' in each component file
 - npm start => to develop
-- npm build => to deploy
+- DEPLOY
+- git status, add ., commit, push
+- npm install --save-dev gh-pages
+- in package.json => - scripts => "homepage":
+  "https://myusername.github.io/my-app"add to package.json => change to
+  =>"homepage": "https://erpua.github.io/goit-react-hw-01-components";
+- in package.json => add scripts: "predeploy": "npm run build", "deploy":
+  "gh-pages -d build" => "scripts": { "start": "react-scripts start", "build":
+  "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
+  eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
+- npm run deploy
+- add repository root to GitHub Website link
 
 ---
 
@@ -68,6 +81,19 @@ EXPLANATIONS FOR INSTALLATIONS:
   development only) => POSSIBLE ERROR: found 1 high severity vulnerability run
   `npm audit fix` to fix them, or `npm audit` for details
 - npm run build => minified bundle (for production)
+- git status, add ., commit, push
+- https://create-react-app.dev/ => Docs => Deployment ( from the right bar
+  GitHub Pages) => "homepage": "https://myusername.github.io/my-app"add to
+  package.json => change to =>"homepage":
+  "https://erpua.github.io/goit-react-hw-01-components",
+- npm install --save-dev gh-pages
+- in package.json add scripts: "predeploy": "npm run build", "deploy": "gh-pages
+  -d build" => "scripts": { "start": "react-scripts start", "build":
+  "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
+  eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
+- npm run deploy => runs folder build and deploys it into github ( creates
+  gh-pages branch, where all unziped files from build folder )
+- add repository root to GitHub Website link
 
 ---
 
@@ -82,22 +108,6 @@ ADDITIONAL:
 - Cntrl + Shift + p => if " > " => open settings, else file searching
 
 ---
-
-DEPLOY AND HOMEWORK:
-
-- git status, add ., commit, push
-- https://create-react-app.dev/ => Docs => Deployment ( from the right bar
-  GitHub Pages) => "homepage": "https://myusername.github.io/my-app"add to
-  package.json => change to =>"homepage":
-  "https://erpua.github.io/goit-react-hw-01-components",
-- npm install --save-dev gh-pages
-- in package.json add scripts: "predeploy": "npm run build", "deploy": "gh-pages
-  -d build" => "scripts": { "start": "react-scripts start", "build":
-  "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
-  eject", "predeploy": "npm run build", "deploy": "gh-pages -d build" },
-- npm run deploy => runs folder build and deploys it into github ( creates
-  gh-pages branch, where all unziped files from build folder )
-- add repository root to GitHub Website link
 
 # Getting Started with Create React App
 

@@ -8,6 +8,7 @@ VSCode extentions:
 - Babel JavaScript
 - ES7 React/Redux...
 - Simple React Snippets
+- Enable ESLint in workspace
 
 ---
 

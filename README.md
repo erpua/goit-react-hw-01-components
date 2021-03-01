@@ -14,9 +14,10 @@ VSCode extentions:
 
 INSTALLATIONS:
 
+- git clone repo
+- cd cloned repo
 - npx create-react-app .
 - npm install react-scripts@latest
-- cd created app
 - npm install --save-dev prop-types
 - npm install --save-dev prettier
 - npm install --save-dev husky@4.3.7
